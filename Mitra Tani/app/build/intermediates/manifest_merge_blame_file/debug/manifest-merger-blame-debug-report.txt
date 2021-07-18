@@ -1,0 +1,1049 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.themescoder.androidstore"
+4    android:versionCode="3"
+5    android:versionName="4.0.14" >
+6
+7    <uses-sdk
+7-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:24:5-25:107
+8        android:minSdkVersion="21"
+8-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:24:5-25:107
+9        android:targetSdkVersion="29" />
+9-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:24:5-25:107
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:6:5-65
+11-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:6:22-62
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:7:5-67
+12-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:7:22-64
+13    <!--
+14    <uses-permission android:name="android.permission.READ_SMS" />
+15    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+16    -->
+17    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+17-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:10:5-76
+17-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:10:22-73
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:11:5-79
+18-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:11:22-76
+19    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+19-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:12:5-80
+19-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:12:22-77
+20    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+20-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:13:5-81
+20-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:13:22-78
+21    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+21-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:14:5-75
+21-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:14:22-72
+22    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+22-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:15:5-78
+22-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:15:22-75
+23    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+23-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:16:5-79
+23-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:16:22-76
+24    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+24-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:17:5-81
+24-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:17:22-78
+25    <!-- Needed only if your app targets Android 5.0 (API level 21) or higher. -->
+26    <uses-feature android:name="android.hardware.location.gps" />
+26-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:19:5-66
+26-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:19:19-63
+27
+28    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+28-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:20:5-81
+28-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:20:22-78
+29    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+29-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:21:5-22:47
+29-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:21:22-70
+30
+31    <!-- Require below permissions for reading sms and otp assist feature -->
+32    <!--
+33    <uses-permission android:name="android.permission.READ_SMS" />
+34    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+35    -->
+36    <uses-feature
+36-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\45037d61611995da7cf3d8790a95eaf5\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:24:5-26:36
+37        android:name="android.hardware.telephony"
+37-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\45037d61611995da7cf3d8790a95eaf5\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:25:9-50
+38        android:required="false" /> <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
+38-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\45037d61611995da7cf3d8790a95eaf5\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:26:9-33
+39    <permission
+39-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:8:5-10:47
+40        android:name="com.themescoder.androidstore.permission.C2D_MESSAGE"
+40-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:9:9-63
+41        android:protectionLevel="signature" />
+41-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:10:9-44
+42
+43    <uses-permission android:name="com.themescoder.androidstore.permission.C2D_MESSAGE" />
+43-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:12:5-79
+43-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:12:22-76
+44    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- Required, makes sure notifications are delivered on time. -->
+44-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:18:5-82
+44-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:18:22-79
+45    <uses-permission android:name="android.permission.WAKE_LOCK" />
+45-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:19:5-68
+45-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:19:22-65
+46    <!--
+47 Required so the device vibrates on receiving a push notification.
+48         Vibration settings of the device still apply.
+49    -->
+50    <uses-permission android:name="android.permission.VIBRATE" /> <!-- START: ShortcutBadger -->
+50-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:24:5-66
+50-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:24:22-63
+51    <!-- Samsung -->
+52    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+52-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:32:5-86
+52-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:32:22-83
+53    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- HTC -->
+53-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:33:5-87
+53-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:33:22-84
+54    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+54-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:34:5-81
+54-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:34:22-78
+55    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- Sony -->
+55-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:35:5-83
+55-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:35:22-80
+56    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+56-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:36:5-88
+56-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:36:22-85
+57    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- Apex -->
+57-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:37:5-92
+57-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:37:22-89
+58    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- Solid -->
+58-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:38:5-84
+58-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:38:22-81
+59    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- Huawei -->
+59-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:39:5-83
+59-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:39:22-80
+60    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+60-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:40:5-91
+60-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:40:22-88
+61    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+61-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:41:5-92
+61-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:41:22-89
+62    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- ZUK -->
+62-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:42:5-93
+62-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:42:22-90
+63    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- OPPO -->
+63-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:43:5-73
+63-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:43:22-70
+64    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+64-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:44:5-82
+64-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:44:22-79
+65    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- EvMe -->
+65-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:45:5-83
+65-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:45:22-80
+66    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+66-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:46:5-88
+66-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:46:22-85
+67    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+67-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:47:5-89
+67-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:47:22-86
+68
+69    <uses-feature
+69-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\c74868d04d8837497165ac9a6c43c9f9\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+70        android:glEsVersion="0x00020000"
+70-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\c74868d04d8837497165ac9a6c43c9f9\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+71        android:required="true" />
+71-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\c74868d04d8837497165ac9a6c43c9f9\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+72
+73    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+73-->[am.appwise.components:NoInternetDialog:1.1.3] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\daf4a63ec0e08eb4bf8838384fb27368\jetified-NoInternetDialog-1.1.3\AndroidManifest.xml:14:5-76
+73-->[am.appwise.components:NoInternetDialog:1.1.3] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\daf4a63ec0e08eb4bf8838384fb27368\jetified-NoInternetDialog-1.1.3\AndroidManifest.xml:14:22-73
+74    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+74-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\413c876f95815fb743b09b464426874d\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:26:5-110
+74-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\413c876f95815fb743b09b464426874d\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:26:22-107
+75
+76    <uses-feature
+76-->[io.card:android-sdk:5.5.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\66b8b936ac38ad926ef5321189945f0c\jetified-android-sdk-5.5.1\AndroidManifest.xml:12:5-14:36
+77        android:name="android.hardware.camera"
+77-->[io.card:android-sdk:5.5.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\66b8b936ac38ad926ef5321189945f0c\jetified-android-sdk-5.5.1\AndroidManifest.xml:13:9-47
+78        android:required="false" />
+78-->[io.card:android-sdk:5.5.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\66b8b936ac38ad926ef5321189945f0c\jetified-android-sdk-5.5.1\AndroidManifest.xml:14:9-33
+79    <uses-feature
+79-->[io.card:android-sdk:5.5.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\66b8b936ac38ad926ef5321189945f0c\jetified-android-sdk-5.5.1\AndroidManifest.xml:15:5-17:36
+80        android:name="android.hardware.camera.autofocus"
+80-->[io.card:android-sdk:5.5.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\66b8b936ac38ad926ef5321189945f0c\jetified-android-sdk-5.5.1\AndroidManifest.xml:16:9-57
+81        android:required="false" />
+81-->[io.card:android-sdk:5.5.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\66b8b936ac38ad926ef5321189945f0c\jetified-android-sdk-5.5.1\AndroidManifest.xml:17:9-33
+82
+83    <application
+83-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:27:5-178:19
+84        android:name="com.themescoder.androidstore.app.App"
+84-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:28:9-60
+85        android:allowBackup="false"
+85-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:29:9-36
+86        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+86-->[androidx.core:core:1.0.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\a7b78fb6e683672b078f97ff740f7818\core-1.0.1\AndroidManifest.xml:22:18-86
+87        android:debuggable="true"
+88        android:fullBackupContent="false"
+88-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:30:9-42
+89        android:hardwareAccelerated="true"
+89-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:35:9-43
+90        android:icon="@mipmap/ic_launcher_foreground"
+90-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:31:9-54
+91        android:label="@string/app_name"
+91-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:32:9-41
+92        android:supportsRtl="true"
+92-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:33:9-35
+93        android:theme="@style/AppTheme"
+93-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:34:9-40
+94        android:usesCleartextTraffic="true"
+94-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:36:9-44
+95        android:windowSoftInputMode="adjustPan" >
+95-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\45037d61611995da7cf3d8790a95eaf5\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:30:9-48
+96        <meta-data
+96-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:41:9-43:55
+97            android:name="com.facebook.sdk.ApplicationId"
+97-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:42:13-58
+98            android:value="@string/facebook_app_id" />
+98-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:43:13-52
+99        <!--
+100            <meta-data
+101            android:name="com.google.android.maps.v2.API_KEY"
+102            android:value="@string/google_api_app_id" />
+103        -->
+104
+105
+106        <!-- Editted by saud. above meta data tag does not works with place picker api. -->
+107        <meta-data
+107-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:49:9-51:56
+108            android:name="com.google.android.geo.API_KEY"
+108-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:50:13-58
+109            android:value="@string/google_api_app_id" />
+109-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:51:13-54
+110        <!-- Editted by saud -->
+111
+112        <meta-data
+112-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:54:9-56:52
+113            android:name="com.google.firebase.messaging.default_notification_icon"
+113-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:55:13-83
+114            android:resource="@drawable/ic_logo" />
+114-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:56:13-49
+115        <!--
+116            <meta-data
+117            android:name="com.google.android.gms.ads.APPLICATION_ID"
+118            android:value="@string/addmob_AppID" />
+119        -->
+120        <meta-data
+120-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:60:9-62:58
+121            android:name="instamojo.orderauth.url"
+121-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:61:13-51
+122            android:value="@string/instamojo_file_url" />
+122-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:62:13-55
+123
+124        <!-- Razor Pay API_KEY -->
+125        <!--
+126            <meta-data
+127            android:name="com.razorpay.ApiKey"
+128            android:value="@string/razor_api_key"
+129            />
+130        -->
+131
+132        <provider
+133            android:name="androidx.core.content.FileProvider"
+133-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:72:13-62
+134            android:authorities="com.themescoder.androidstore.provider"
+134-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:73:13-60
+135            android:exported="false"
+135-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:74:13-37
+136            android:grantUriPermissions="true" >
+136-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:75:13-47
+137            <meta-data
+137-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:76:13-78:58
+138                android:name="android.support.FILE_PROVIDER_PATHS"
+138-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:77:17-67
+139                android:resource="@xml/provider_paths" />
+139-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:78:17-55
+140        </provider>
+141
+142        <activity
+142-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:82:9-94:20
+143            android:name="com.themescoder.androidstore.activities.SplashScreen"
+143-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:83:13-80
+144            android:exported="true"
+144-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:84:13-36
+145            android:launchMode="singleTask"
+145-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:85:13-44
+146            android:screenOrientation="portrait"
+146-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:86:13-49
+147            android:theme="@style/MySplashScreen" >
+147-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:88:13-50
+148            <intent-filter>
+148-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:90:13-93:29
+149                <action android:name="android.intent.action.MAIN" />
+149-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:91:17-69
+149-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:91:25-66
+150
+151                <category android:name="android.intent.category.LAUNCHER" />
+151-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:92:17-77
+151-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:92:27-74
+152            </intent-filter>
+153        </activity>
+154
+155        <!-- <activity android:name="com.themescoder.androidstore.activities.SplashScreen" /> -->
+156
+157        <activity
+157-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:98:9-112:20
+158            android:name="com.themescoder.androidstore.activities.MainActivity"
+158-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:99:13-80
+159            android:exported="true"
+159-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:100:13-36
+160            android:launchMode="singleTask"
+160-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:101:13-44
+161            android:screenOrientation="portrait"
+161-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:102:13-49
+162            android:windowSoftInputMode="adjustResize" >
+162-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:104:13-55
+163            <intent-filter>
+163-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:106:13-111:29
+164                <action android:name="android.intent.action.MAIN" />
+164-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:91:17-69
+164-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:91:25-66
+165                <action android:name="android.intent.action.SEARCH" />
+165-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:108:17-71
+165-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:108:25-68
+166
+167                <category android:name="android.intent.category.DEFAULT" />
+167-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:110:17-76
+167-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:110:27-73
+168            </intent-filter>
+169        </activity>
+170        <activity
+170-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:114:9-119:58
+171            android:name="com.themescoder.androidstore.activities.Login"
+171-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:115:13-73
+172            android:label=".activities.Login"
+172-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:116:13-46
+173            android:screenOrientation="portrait"
+173-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:117:13-49
+174            android:windowSoftInputMode="adjustResize" />
+174-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:119:13-55
+175        <activity
+175-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:121:9-126:56
+176            android:name="com.themescoder.androidstore.activities.Signup"
+176-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:122:13-74
+177            android:label=".activities.Signup"
+177-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:123:13-47
+178            android:screenOrientation="portrait"
+178-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:124:13-49
+179            android:windowSoftInputMode="adjustResize" />
+179-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:125:13-55
+180        <activity android:name="com.themescoder.androidstore.Maps.MapActivity" />
+180-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:129:9-81
+180-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:129:19-79
+181        <activity android:name="com.themescoder.androidstore.activities.Order_Tracking_Activity" />
+181-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:131:9-72
+181-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:131:19-69
+182
+183        <!-- Facebook Activity -->
+184
+185        <activity
+185-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:135:9-138:48
+186            android:name="com.facebook.FacebookActivity"
+186-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:136:13-57
+187            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+187-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:137:13-96
+188            android:label="@string/app_name"
+188-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:138:13-45
+189            android:theme="@style/com_facebook_activity_theme" />
+189-->[com.facebook.android:facebook-common:4.42.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\1d6c76ac95d52884d4dc30121e5b1800\jetified-facebook-common-4.42.0\AndroidManifest.xml:32:13-63
+190
+191        <!-- Braintree Activity -->
+192
+193        <activity
+193-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:142:9-152:20
+194            android:name="com.braintreepayments.api.BraintreeBrowserSwitchActivity"
+194-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:143:13-84
+195            android:launchMode="singleTask" >
+195-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:144:13-44
+196            <intent-filter>
+196-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:145:13-151:29
+197                <action android:name="android.intent.action.VIEW" />
+197-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:146:17-69
+197-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:146:25-66
+198
+199                <data android:scheme="com.themescoder.androidstore.braintree" />
+199-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:147:23-66
+200
+201                <category android:name="android.intent.category.DEFAULT" />
+201-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:110:17-76
+201-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:110:27-73
+202                <category android:name="android.intent.category.BROWSABLE" />
+202-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:150:17-78
+202-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:150:27-75
+203            </intent-filter>
+204        </activity>
+205
+206        <!-- Scheduled Notifications -->
+207
+208        <receiver
+208-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:157:9-166:20
+209            android:name="com.themescoder.androidstore.receivers.AlarmReceiver"
+209-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:158:13-80
+210            android:enabled="false" >
+210-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:159:13-36
+211            <intent-filter>
+211-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:160:13-165:29
+212                <category android:name="android.intent.category.APP_MARKET" />
+212-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:161:17-79
+212-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:161:27-76
+213
+214                <action android:name="android.intent.action.BOOT_COMPLETED" />
+214-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:163:17-79
+214-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:163:25-76
+215                <action android:name="android.media.action.DISPLAY_NOTIFICATION" />
+215-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:164:17-84
+215-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:164:25-81
+216            </intent-filter>
+217        </receiver>
+218
+219        <!-- Firebase Notifications -->
+220
+221        <service android:name="com.themescoder.androidstore.services.MyFirebaseInstanceIDService" >
+221-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:171:9-175:19
+221-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:171:18-98
+222            <intent-filter>
+222-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:172:13-174:29
+223                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+223-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:173:17-80
+223-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:173:25-77
+224            </intent-filter>
+225        </service>
+226
+227        <activity
+227-->[com.braintreepayments.api:drop-in:3.7.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f501c3780d073c93e5a25190de3c891e\jetified-drop-in-3.7.1\AndroidManifest.xml:18:9-20:62
+228            android:name="com.braintreepayments.api.threedsecure.ThreeDSecureWebViewActivity"
+228-->[com.braintreepayments.api:drop-in:3.7.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f501c3780d073c93e5a25190de3c891e\jetified-drop-in-3.7.1\AndroidManifest.xml:19:13-94
+229            android:theme="@style/bt_three_d_secure_theme" />
+229-->[com.braintreepayments.api:drop-in:3.7.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f501c3780d073c93e5a25190de3c891e\jetified-drop-in-3.7.1\AndroidManifest.xml:20:13-59
+230        <activity
+230-->[com.braintreepayments.api:drop-in:3.7.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f501c3780d073c93e5a25190de3c891e\jetified-drop-in-3.7.1\AndroidManifest.xml:21:9-23:64
+231            android:name="com.braintreepayments.api.dropin.DropInActivity"
+231-->[com.braintreepayments.api:drop-in:3.7.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f501c3780d073c93e5a25190de3c891e\jetified-drop-in-3.7.1\AndroidManifest.xml:22:13-75
+232            android:theme="@style/bt_drop_in_activity_theme" />
+232-->[com.braintreepayments.api:drop-in:3.7.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f501c3780d073c93e5a25190de3c891e\jetified-drop-in-3.7.1\AndroidManifest.xml:23:13-61
+233        <activity
+233-->[com.braintreepayments.api:drop-in:3.7.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f501c3780d073c93e5a25190de3c891e\jetified-drop-in-3.7.1\AndroidManifest.xml:24:9-26:65
+234            android:name="com.braintreepayments.api.dropin.AddCardActivity"
+234-->[com.braintreepayments.api:drop-in:3.7.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f501c3780d073c93e5a25190de3c891e\jetified-drop-in-3.7.1\AndroidManifest.xml:25:13-76
+235            android:theme="@style/bt_add_card_activity_theme" />
+235-->[com.braintreepayments.api:drop-in:3.7.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f501c3780d073c93e5a25190de3c891e\jetified-drop-in-3.7.1\AndroidManifest.xml:26:13-62
+236        <activity
+236-->[com.braintreepayments.api:drop-in:3.7.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f501c3780d073c93e5a25190de3c891e\jetified-drop-in-3.7.1\AndroidManifest.xml:27:9-29:70
+237            android:name="com.braintreepayments.api.dropin.VaultManagerActivity"
+237-->[com.braintreepayments.api:drop-in:3.7.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f501c3780d073c93e5a25190de3c891e\jetified-drop-in-3.7.1\AndroidManifest.xml:28:13-81
+238            android:theme="@style/bt_vault_manager_activity_theme" />
+238-->[com.braintreepayments.api:drop-in:3.7.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f501c3780d073c93e5a25190de3c891e\jetified-drop-in-3.7.1\AndroidManifest.xml:29:13-67
+239        <activity
+239-->[com.payumoney.sdkui:plug-n-play:1.6.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\52bb2c6d48390a851f94ed7bc476b6f0\jetified-plug-n-play-1.6.0\AndroidManifest.xml:19:9-24:55
+240            android:name="com.payumoney.sdkui.ui.activities.PayUmoneyActivity"
+240-->[com.payumoney.sdkui:plug-n-play:1.6.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\52bb2c6d48390a851f94ed7bc476b6f0\jetified-plug-n-play-1.6.0\AndroidManifest.xml:20:13-79
+241            android:label="@string/title_activity_citrus"
+241-->[com.payumoney.sdkui:plug-n-play:1.6.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\52bb2c6d48390a851f94ed7bc476b6f0\jetified-plug-n-play-1.6.0\AndroidManifest.xml:21:13-58
+242            android:screenOrientation="portrait"
+242-->[com.payumoney.sdkui:plug-n-play:1.6.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\52bb2c6d48390a851f94ed7bc476b6f0\jetified-plug-n-play-1.6.0\AndroidManifest.xml:22:13-49
+243            android:theme="@style/PayumoneyAppTheme"
+243-->[com.payumoney.sdkui:plug-n-play:1.6.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\52bb2c6d48390a851f94ed7bc476b6f0\jetified-plug-n-play-1.6.0\AndroidManifest.xml:23:13-53
+244            android:windowSoftInputMode="adjustPan" />
+244-->[com.payumoney.sdkui:plug-n-play:1.6.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\52bb2c6d48390a851f94ed7bc476b6f0\jetified-plug-n-play-1.6.0\AndroidManifest.xml:24:13-52
+245        <activity
+245-->[com.payumoney.sdkui:plug-n-play:1.6.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\52bb2c6d48390a851f94ed7bc476b6f0\jetified-plug-n-play-1.6.0\AndroidManifest.xml:25:9-28:56
+246            android:name="com.payumoney.sdkui.ui.activities.ReviewOrderActivity"
+246-->[com.payumoney.sdkui:plug-n-play:1.6.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\52bb2c6d48390a851f94ed7bc476b6f0\jetified-plug-n-play-1.6.0\AndroidManifest.xml:26:13-81
+247            android:screenOrientation="portrait"
+247-->[com.payumoney.sdkui:plug-n-play:1.6.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\52bb2c6d48390a851f94ed7bc476b6f0\jetified-plug-n-play-1.6.0\AndroidManifest.xml:27:13-49
+248            android:theme="@style/PayumoneyAppTheme" />
+248-->[com.payumoney.sdkui:plug-n-play:1.6.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\52bb2c6d48390a851f94ed7bc476b6f0\jetified-plug-n-play-1.6.0\AndroidManifest.xml:28:13-53
+249        <activity
+249-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\45037d61611995da7cf3d8790a95eaf5\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:31:9-34:72
+250            android:name="com.payumoney.core.SdkWebViewActivityNew"
+250-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\45037d61611995da7cf3d8790a95eaf5\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:32:13-68
+251            android:screenOrientation="portrait"
+251-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\45037d61611995da7cf3d8790a95eaf5\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:33:13-49
+252            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+252-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\45037d61611995da7cf3d8790a95eaf5\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:34:13-69
+253        <activity
+253-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\45037d61611995da7cf3d8790a95eaf5\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:35:9-40:59
+254            android:name="com.payu.custombrowser.CBActivity"
+254-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\45037d61611995da7cf3d8790a95eaf5\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:36:13-61
+255            android:screenOrientation="portrait"
+255-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\45037d61611995da7cf3d8790a95eaf5\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:37:13-49
+256            android:theme="@style/Theme.AppCompat"
+256-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\45037d61611995da7cf3d8790a95eaf5\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:38:13-51
+257            android:windowSoftInputMode="stateAlwaysHidden" />
+257-->[com.payumoney.core:payumoney-sdk:7.6.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\45037d61611995da7cf3d8790a95eaf5\jetified-payumoney-sdk-7.6.0\AndroidManifest.xml:39:13-60
+258        <activity android:name="instamojo.library.Instamojo" >
+258-->[ai.devsupport.instamojo:instamojolib:0.1.6] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\ea6fc45325be5b120a474e5df095ef90\jetified-instamojolib-0.1.6\AndroidManifest.xml:14:9-15:20
+258-->[ai.devsupport.instamojo:instamojolib:0.1.6] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\ea6fc45325be5b120a474e5df095ef90\jetified-instamojolib-0.1.6\AndroidManifest.xml:14:19-61
+259        </activity> <!-- Autocomplete -->
+260        <activity
+260-->[com.google.android.libraries.places:places:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\df2b88d1f1288cc955263c5ebfcc2aed\jetified-places-1.1.0\AndroidManifest.xml:16:9-23:20
+261            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+261-->[com.google.android.libraries.places:places:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\df2b88d1f1288cc955263c5ebfcc2aed\jetified-places-1.1.0\AndroidManifest.xml:17:13-91
+262            android:exported="false"
+262-->[com.google.android.libraries.places:places:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\df2b88d1f1288cc955263c5ebfcc2aed\jetified-places-1.1.0\AndroidManifest.xml:18:13-37
+263            android:hardwareAccelerated="true"
+263-->[com.google.android.libraries.places:places:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\df2b88d1f1288cc955263c5ebfcc2aed\jetified-places-1.1.0\AndroidManifest.xml:19:13-47
+264            android:label="@string/places_autocomplete_label"
+264-->[com.google.android.libraries.places:places:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\df2b88d1f1288cc955263c5ebfcc2aed\jetified-places-1.1.0\AndroidManifest.xml:20:13-62
+265            android:theme="@style/PlacesAutocompleteThemeOverlay"
+265-->[com.google.android.libraries.places:places:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\df2b88d1f1288cc955263c5ebfcc2aed\jetified-places-1.1.0\AndroidManifest.xml:21:13-66
+266            android:windowSoftInputMode="stateAlwaysVisible|adjustPan" >
+266-->[com.google.android.libraries.places:places:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\df2b88d1f1288cc955263c5ebfcc2aed\jetified-places-1.1.0\AndroidManifest.xml:22:13-71
+267        </activity>
+268        <activity
+268-->[com.instamojo:android-sdk:1.2.6] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\87502b42a8e3437817505f100a5e7d25\jetified-android-sdk-1.2.6\AndroidManifest.xml:15:9-26:20
+269            android:name="com.instamojo.android.activities.PaymentDetailsActivity"
+269-->[com.instamojo:android-sdk:1.2.6] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\87502b42a8e3437817505f100a5e7d25\jetified-android-sdk-1.2.6\AndroidManifest.xml:16:13-83
+270            android:screenOrientation="portrait"
+270-->[com.instamojo:android-sdk:1.2.6] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\87502b42a8e3437817505f100a5e7d25\jetified-android-sdk-1.2.6\AndroidManifest.xml:17:13-49
+271            android:theme="@style/SdkTheme" >
+271-->[com.instamojo:android-sdk:1.2.6] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\87502b42a8e3437817505f100a5e7d25\jetified-android-sdk-1.2.6\AndroidManifest.xml:18:13-44
+272            <meta-data
+272-->[com.instamojo:android-sdk:1.2.6] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\87502b42a8e3437817505f100a5e7d25\jetified-android-sdk-1.2.6\AndroidManifest.xml:19:13-21:54
+273                android:name="android.app.searchable"
+273-->[com.instamojo:android-sdk:1.2.6] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\87502b42a8e3437817505f100a5e7d25\jetified-android-sdk-1.2.6\AndroidManifest.xml:20:17-54
+274                android:resource="@xml/searchable" />
+274-->[com.instamojo:android-sdk:1.2.6] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\87502b42a8e3437817505f100a5e7d25\jetified-android-sdk-1.2.6\AndroidManifest.xml:21:17-51
+275
+276            <intent-filter>
+276-->[com.instamojo:android-sdk:1.2.6] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\87502b42a8e3437817505f100a5e7d25\jetified-android-sdk-1.2.6\AndroidManifest.xml:23:13-25:29
+277                <action android:name="android.intent.action.SEARCH" />
+277-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:108:17-71
+277-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:108:25-68
+278            </intent-filter>
+279        </activity>
+280        <activity
+280-->[com.instamojo:android-sdk:1.2.6] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\87502b42a8e3437817505f100a5e7d25\jetified-android-sdk-1.2.6\AndroidManifest.xml:27:9-33:58
+281            android:name="com.instamojo.android.activities.PaymentActivity"
+281-->[com.instamojo:android-sdk:1.2.6] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\87502b42a8e3437817505f100a5e7d25\jetified-android-sdk-1.2.6\AndroidManifest.xml:28:13-76
+282            android:hardwareAccelerated="true"
+282-->[com.instamojo:android-sdk:1.2.6] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\87502b42a8e3437817505f100a5e7d25\jetified-android-sdk-1.2.6\AndroidManifest.xml:29:13-47
+283            android:label="Payment"
+283-->[com.instamojo:android-sdk:1.2.6] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\87502b42a8e3437817505f100a5e7d25\jetified-android-sdk-1.2.6\AndroidManifest.xml:30:13-36
+284            android:screenOrientation="portrait"
+284-->[com.instamojo:android-sdk:1.2.6] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\87502b42a8e3437817505f100a5e7d25\jetified-android-sdk-1.2.6\AndroidManifest.xml:31:13-49
+285            android:theme="@style/SdkTheme"
+285-->[com.instamojo:android-sdk:1.2.6] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\87502b42a8e3437817505f100a5e7d25\jetified-android-sdk-1.2.6\AndroidManifest.xml:32:13-44
+286            android:windowSoftInputMode="adjustResize" />
+286-->[com.instamojo:android-sdk:1.2.6] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\87502b42a8e3437817505f100a5e7d25\jetified-android-sdk-1.2.6\AndroidManifest.xml:33:13-55
+287        <activity android:name="com.facebook.CustomTabMainActivity" />
+287-->[com.facebook.android:facebook-common:4.42.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\1d6c76ac95d52884d4dc30121e5b1800\jetified-facebook-common-4.42.0\AndroidManifest.xml:33:9-71
+287-->[com.facebook.android:facebook-common:4.42.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\1d6c76ac95d52884d4dc30121e5b1800\jetified-facebook-common-4.42.0\AndroidManifest.xml:33:19-68
+288        <activity android:name="com.facebook.CustomTabActivity" />
+288-->[com.facebook.android:facebook-common:4.42.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\1d6c76ac95d52884d4dc30121e5b1800\jetified-facebook-common-4.42.0\AndroidManifest.xml:34:9-67
+288-->[com.facebook.android:facebook-common:4.42.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\1d6c76ac95d52884d4dc30121e5b1800\jetified-facebook-common-4.42.0\AndroidManifest.xml:34:19-64
+289
+290        <service android:name="com.payu.custombrowser.services.SnoozeService" />
+290-->[com.payu.custombrowser:payu-custom-browser:7.5.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\b1f5c127a17a839b9e92f5f9a3f2759b\jetified-payu-custom-browser-7.5.1\AndroidManifest.xml:23:9-81
+290-->[com.payu.custombrowser:payu-custom-browser:7.5.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\b1f5c127a17a839b9e92f5f9a3f2759b\jetified-payu-custom-browser-7.5.1\AndroidManifest.xml:23:18-78
+291
+292        <activity android:name="com.payu.custombrowser.PreLollipopPaymentsActivity" >
+292-->[com.payu.custombrowser:payu-custom-browser:7.5.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\b1f5c127a17a839b9e92f5f9a3f2759b\jetified-payu-custom-browser-7.5.1\AndroidManifest.xml:25:9-42:20
+292-->[com.payu.custombrowser:payu-custom-browser:7.5.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\b1f5c127a17a839b9e92f5f9a3f2759b\jetified-payu-custom-browser-7.5.1\AndroidManifest.xml:25:19-84
+293            <intent-filter>
+293-->[com.payu.custombrowser:payu-custom-browser:7.5.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\b1f5c127a17a839b9e92f5f9a3f2759b\jetified-payu-custom-browser-7.5.1\AndroidManifest.xml:26:13-33:29
+294                <data android:scheme="com.themescoder.androidstore.success" />
+294-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:147:23-66
+295
+296                <action android:name="android.intent.action.VIEW" />
+296-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:146:17-69
+296-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:146:25-66
+297
+298                <category android:name="android.intent.category.DEFAULT" />
+298-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:110:17-76
+298-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:110:27-73
+299                <category android:name="android.intent.category.BROWSABLE" />
+299-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:150:17-78
+299-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:150:27-75
+300            </intent-filter>
+301            <intent-filter>
+301-->[com.payu.custombrowser:payu-custom-browser:7.5.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\b1f5c127a17a839b9e92f5f9a3f2759b\jetified-payu-custom-browser-7.5.1\AndroidManifest.xml:34:13-41:29
+302                <data android:scheme="com.themescoder.androidstore.failure" />
+302-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:147:23-66
+303
+304                <action android:name="android.intent.action.VIEW" />
+304-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:146:17-69
+304-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:146:25-66
+305
+306                <category android:name="android.intent.category.DEFAULT" />
+306-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:110:17-76
+306-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:110:27-73
+307                <category android:name="android.intent.category.BROWSABLE" />
+307-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:150:17-78
+307-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:150:27-75
+308            </intent-filter>
+309        </activity>
+310        <activity android:name="com.payu.custombrowser.PrePaymentsActivity" />
+310-->[com.payu.custombrowser:payu-custom-browser:7.5.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\b1f5c127a17a839b9e92f5f9a3f2759b\jetified-payu-custom-browser-7.5.1\AndroidManifest.xml:43:9-79
+310-->[com.payu.custombrowser:payu-custom-browser:7.5.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\b1f5c127a17a839b9e92f5f9a3f2759b\jetified-payu-custom-browser-7.5.1\AndroidManifest.xml:43:19-76
+311        <activity
+311-->[com.payu.upisdk:upisdk:1.0.2] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\9303ed210c7c6a6d63bdf4af8d07f780\jetified-upisdk-1.0.2\AndroidManifest.xml:14:9-17:63
+312            android:name="com.payu.upisdk.upiintent.PaymentResponseUpiSdkActivity"
+312-->[com.payu.upisdk:upisdk:1.0.2] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\9303ed210c7c6a6d63bdf4af8d07f780\jetified-upisdk-1.0.2\AndroidManifest.xml:15:13-83
+313            android:theme="@style/Theme.AppCompat.Transparent.NoActionBar"
+313-->[com.payu.upisdk:upisdk:1.0.2] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\9303ed210c7c6a6d63bdf4af8d07f780\jetified-upisdk-1.0.2\AndroidManifest.xml:16:13-75
+314            android:windowSoftInputMode="stateAlwaysHidden" />
+314-->[com.payu.upisdk:upisdk:1.0.2] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\9303ed210c7c6a6d63bdf4af8d07f780\jetified-upisdk-1.0.2\AndroidManifest.xml:17:13-60
+315
+316        <meta-data
+316-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:50:9-52:51
+317            android:name="onesignal_app_id"
+317-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:51:13-44
+318            android:value="YOUR_ONESIGNAL_APP_ID" /> <!-- Deprecated - Pulled from OneSignal dashboard. -->
+318-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:52:13-48
+319        <meta-data
+319-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:54:9-56:70
+320            android:name="onesignal_google_project_number"
+320-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:55:13-59
+321            android:value="str:REMOTE" />
+321-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:56:13-67
+322
+323        <receiver
+323-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:58:9-68:20
+324            android:name="com.onesignal.GcmBroadcastReceiver"
+324-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:59:13-62
+325            android:permission="com.google.android.c2dm.permission.SEND" >
+325-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:60:13-73
+326
+327            <!-- High priority so OneSignal payloads can be filtered from other GCM receivers if filterOtherGCMReceivers is enabled. -->
+328            <intent-filter android:priority="999" >
+328-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:63:13-67:29
+328-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:63:28-50
+329                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+329-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:64:17-81
+329-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:64:25-78
+330
+331                <category android:name="com.themescoder.androidstore" />
+331-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:66:17-61
+331-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:66:27-58
+332            </intent-filter>
+333        </receiver>
+334        <receiver android:name="com.onesignal.NotificationOpenedReceiver" />
+334-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:69:9-77
+334-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:69:19-74
+335
+336        <service android:name="com.onesignal.GcmIntentService" />
+336-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:71:9-66
+336-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:71:18-63
+337        <service
+337-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:72:9-74:72
+338            android:name="com.onesignal.GcmIntentJobService"
+338-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:73:13-61
+339            android:permission="android.permission.BIND_JOB_SERVICE" />
+339-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:74:13-69
+340        <service
+340-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:75:9-77:72
+341            android:name="com.onesignal.RestoreJobService"
+341-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:76:13-59
+342            android:permission="android.permission.BIND_JOB_SERVICE" />
+342-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:77:13-69
+343        <service
+343-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:78:9-80:72
+344            android:name="com.onesignal.RestoreKickoffJobService"
+344-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:79:13-66
+345            android:permission="android.permission.BIND_JOB_SERVICE" />
+345-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:80:13-69
+346        <service
+346-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:81:9-83:43
+347            android:name="com.onesignal.SyncService"
+347-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:82:13-53
+348            android:stopWithTask="true" />
+348-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:83:13-40
+349        <service
+349-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:84:9-86:72
+350            android:name="com.onesignal.SyncJobService"
+350-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:85:13-56
+351            android:permission="android.permission.BIND_JOB_SERVICE" />
+351-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:86:13-69
+352
+353        <activity
+353-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:88:9-90:75
+354            android:name="com.onesignal.PermissionsActivity"
+354-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:89:13-61
+355            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+355-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:90:13-72
+356
+357        <service android:name="com.onesignal.NotificationRestoreService" />
+357-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:92:9-76
+357-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:92:18-73
+358
+359        <receiver android:name="com.onesignal.BootUpReceiver" >
+359-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:94:9-100:20
+359-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:94:19-62
+360            <intent-filter>
+360-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:95:13-99:29
+361                <action android:name="android.intent.action.ACTION_BOOT_COMPLETED" />
+361-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:96:17-86
+361-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:96:25-83
+362                <action android:name="android.intent.action.BOOT_COMPLETED" />
+362-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:163:17-79
+362-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:163:25-76
+363                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+363-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:98:17-82
+363-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:98:25-79
+364            </intent-filter>
+365        </receiver>
+366        <receiver android:name="com.onesignal.UpgradeReceiver" >
+366-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:101:9-105:20
+366-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:101:19-63
+367            <intent-filter>
+367-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:102:13-104:29
+368                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+368-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:103:17-84
+368-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:103:25-81
+369            </intent-filter>
+370        </receiver>
+371
+372        <activity
+372-->[com.paytm:pgplussdk:1.2.3] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\694d95458cd804e189b678053c7e2c5a\jetified-pgplussdk-1.2.3\AndroidManifest.xml:13:9-16:47
+373            android:name="com.paytm.pgsdk.PaytmPGActivity"
+373-->[com.paytm:pgplussdk:1.2.3] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\694d95458cd804e189b678053c7e2c5a\jetified-pgplussdk-1.2.3\AndroidManifest.xml:14:13-59
+374            android:screenOrientation="portrait"
+374-->[com.paytm:pgplussdk:1.2.3] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\694d95458cd804e189b678053c7e2c5a\jetified-pgplussdk-1.2.3\AndroidManifest.xml:15:13-49
+375            android:theme="@style/AppTheme" />
+375-->[com.paytm:pgplussdk:1.2.3] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\694d95458cd804e189b678053c7e2c5a\jetified-pgplussdk-1.2.3\AndroidManifest.xml:16:13-44
+376
+377        <service
+377-->[com.paytm:pgplussdk:1.2.3] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\694d95458cd804e189b678053c7e2c5a\jetified-pgplussdk-1.2.3\AndroidManifest.xml:18:9-20:40
+378            android:name="com.paytm.pgsdk.IntentServicePostNotification"
+378-->[com.paytm:pgplussdk:1.2.3] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\694d95458cd804e189b678053c7e2c5a\jetified-pgplussdk-1.2.3\AndroidManifest.xml:19:13-73
+379            android:exported="false" />
+379-->[com.paytm:pgplussdk:1.2.3] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\694d95458cd804e189b678053c7e2c5a\jetified-pgplussdk-1.2.3\AndroidManifest.xml:20:13-37
+380        <service
+380-->[com.paytm:pgplussdk:1.2.3] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\694d95458cd804e189b678053c7e2c5a\jetified-pgplussdk-1.2.3\AndroidManifest.xml:21:9-23:40
+381            android:name="com.paytm.pgsdk.IntentServicePreNotification"
+381-->[com.paytm:pgplussdk:1.2.3] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\694d95458cd804e189b678053c7e2c5a\jetified-pgplussdk-1.2.3\AndroidManifest.xml:22:13-72
+382            android:exported="false" />
+382-->[com.paytm:pgplussdk:1.2.3] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\694d95458cd804e189b678053c7e2c5a\jetified-pgplussdk-1.2.3\AndroidManifest.xml:23:13-37
+383        <service
+383-->[com.paytm:pgplussdk:1.2.3] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\694d95458cd804e189b678053c7e2c5a\jetified-pgplussdk-1.2.3\AndroidManifest.xml:24:9-27:39
+384            android:name="com.paytm.pgsdk.easypay.utils.EasypayLoaderService"
+384-->[com.paytm:pgplussdk:1.2.3] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\694d95458cd804e189b678053c7e2c5a\jetified-pgplussdk-1.2.3\AndroidManifest.xml:25:13-78
+385            android:enabled="true"
+385-->[com.paytm:pgplussdk:1.2.3] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\694d95458cd804e189b678053c7e2c5a\jetified-pgplussdk-1.2.3\AndroidManifest.xml:26:13-35
+386            android:exported="true" />
+386-->[com.paytm:pgplussdk:1.2.3] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\694d95458cd804e189b678053c7e2c5a\jetified-pgplussdk-1.2.3\AndroidManifest.xml:27:13-36
+387        <service
+387-->[com.paytm:pgplussdk:1.2.3] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\694d95458cd804e189b678053c7e2c5a\jetified-pgplussdk-1.2.3\AndroidManifest.xml:28:9-31:39
+388            android:name="com.paytm.pgsdk.easypay.utils.AnalyticsService"
+388-->[com.paytm:pgplussdk:1.2.3] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\694d95458cd804e189b678053c7e2c5a\jetified-pgplussdk-1.2.3\AndroidManifest.xml:29:13-74
+389            android:enabled="true"
+389-->[com.paytm:pgplussdk:1.2.3] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\694d95458cd804e189b678053c7e2c5a\jetified-pgplussdk-1.2.3\AndroidManifest.xml:30:13-35
+390            android:exported="true" />
+390-->[com.paytm:pgplussdk:1.2.3] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\694d95458cd804e189b678053c7e2c5a\jetified-pgplussdk-1.2.3\AndroidManifest.xml:31:13-36
+391
+392        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+392-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f2956f7445f615ca0d03eceaa661deef\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:13:9-84
+392-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f2956f7445f615ca0d03eceaa661deef\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:13:19-81
+393        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+393-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f2956f7445f615ca0d03eceaa661deef\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:14:9-90
+393-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f2956f7445f615ca0d03eceaa661deef\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:14:19-87
+394        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+394-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f2956f7445f615ca0d03eceaa661deef\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:15:9-91
+394-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f2956f7445f615ca0d03eceaa661deef\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:15:19-88
+395        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+395-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f2956f7445f615ca0d03eceaa661deef\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:16:9-82
+395-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f2956f7445f615ca0d03eceaa661deef\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:16:19-79
+396        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
+396-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f2956f7445f615ca0d03eceaa661deef\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:17:9-96
+396-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f2956f7445f615ca0d03eceaa661deef\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:17:19-93
+397        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
+397-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f2956f7445f615ca0d03eceaa661deef\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:18:9-97
+397-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f2956f7445f615ca0d03eceaa661deef\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:18:19-94
+398        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
+398-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f2956f7445f615ca0d03eceaa661deef\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:19:9-94
+398-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f2956f7445f615ca0d03eceaa661deef\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:19:19-91
+399        <activity android:name="com.paypal.android.sdk.payments.PayPalProfileSharingActivity" />
+399-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f2956f7445f615ca0d03eceaa661deef\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:20:9-97
+399-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f2956f7445f615ca0d03eceaa661deef\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:20:19-94
+400        <activity android:name="com.paypal.android.sdk.payments.ProfileSharingConsentActivity" />
+400-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f2956f7445f615ca0d03eceaa661deef\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:21:9-98
+400-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f2956f7445f615ca0d03eceaa661deef\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:21:19-95
+401
+402        <service
+402-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f2956f7445f615ca0d03eceaa661deef\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:23:9-25:40
+403            android:name="com.paypal.android.sdk.payments.PayPalService"
+403-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f2956f7445f615ca0d03eceaa661deef\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:24:13-73
+404            android:exported="false" />
+404-->[com.paypal.sdk:paypal-android-sdk:2.16.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\f2956f7445f615ca0d03eceaa661deef\jetified-paypal-android-sdk-2.16.0\AndroidManifest.xml:25:13-37
+405
+406        <activity
+406-->[com.braintreepayments.api:braintree:2.22.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\bd29bfb42289beecfb3397e5ba854b4c\jetified-braintree-2.22.0\AndroidManifest.xml:15:9-17:62
+407            android:name="com.braintreepayments.api.AndroidPayActivity"
+407-->[com.braintreepayments.api:braintree:2.22.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\bd29bfb42289beecfb3397e5ba854b4c\jetified-braintree-2.22.0\AndroidManifest.xml:16:13-72
+408            android:theme="@style/bt_transparent_activity" />
+408-->[com.braintreepayments.api:braintree:2.22.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\bd29bfb42289beecfb3397e5ba854b4c\jetified-braintree-2.22.0\AndroidManifest.xml:17:13-59
+409        <activity
+409-->[com.braintreepayments.api:braintree:2.22.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\bd29bfb42289beecfb3397e5ba854b4c\jetified-braintree-2.22.0\AndroidManifest.xml:18:9-20:62
+410            android:name="com.braintreepayments.api.GooglePaymentActivity"
+410-->[com.braintreepayments.api:braintree:2.22.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\bd29bfb42289beecfb3397e5ba854b4c\jetified-braintree-2.22.0\AndroidManifest.xml:19:13-75
+411            android:theme="@style/bt_transparent_activity" />
+411-->[com.braintreepayments.api:braintree:2.22.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\bd29bfb42289beecfb3397e5ba854b4c\jetified-braintree-2.22.0\AndroidManifest.xml:20:13-59
+412
+413        <service android:name="com.braintreepayments.api.internal.AnalyticsIntentService" />
+413-->[com.braintreepayments.api:braintree:2.22.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\bd29bfb42289beecfb3397e5ba854b4c\jetified-braintree-2.22.0\AndroidManifest.xml:23:9-93
+413-->[com.braintreepayments.api:braintree:2.22.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\bd29bfb42289beecfb3397e5ba854b4c\jetified-braintree-2.22.0\AndroidManifest.xml:23:18-90
+414
+415        <activity
+415-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\b32c7e275ba571344c4bc142d1720abc\jetified-firebase-auth-18.1.0\AndroidManifest.xml:24:9-31:50
+416            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+416-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\b32c7e275ba571344c4bc142d1720abc\jetified-firebase-auth-18.1.0\AndroidManifest.xml:25:13-85
+417            android:excludeFromRecents="true"
+417-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\b32c7e275ba571344c4bc142d1720abc\jetified-firebase-auth-18.1.0\AndroidManifest.xml:26:13-46
+418            android:exported="true"
+418-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\b32c7e275ba571344c4bc142d1720abc\jetified-firebase-auth-18.1.0\AndroidManifest.xml:27:13-36
+419            android:launchMode="singleTask"
+419-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\b32c7e275ba571344c4bc142d1720abc\jetified-firebase-auth-18.1.0\AndroidManifest.xml:28:13-44
+420            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+420-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\b32c7e275ba571344c4bc142d1720abc\jetified-firebase-auth-18.1.0\AndroidManifest.xml:29:13-102
+421            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+421-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\b32c7e275ba571344c4bc142d1720abc\jetified-firebase-auth-18.1.0\AndroidManifest.xml:30:13-72
+422
+423        <service
+423-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\b32c7e275ba571344c4bc142d1720abc\jetified-firebase-auth-18.1.0\AndroidManifest.xml:33:9-39:19
+424            android:name="com.google.firebase.components.ComponentDiscoveryService"
+424-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\b32c7e275ba571344c4bc142d1720abc\jetified-firebase-auth-18.1.0\AndroidManifest.xml:34:13-84
+425            android:directBootAware="true"
+425-->[com.google.firebase:firebase-common:19.2.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\bbd7bc8fe4178b0b3e76fd0b33ccefdd\jetified-firebase-common-19.2.0\AndroidManifest.xml:15:13-43
+426            android:exported="false" >
+426-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\b32c7e275ba571344c4bc142d1720abc\jetified-firebase-auth-18.1.0\AndroidManifest.xml:35:13-37
+427            <meta-data
+427-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\b32c7e275ba571344c4bc142d1720abc\jetified-firebase-auth-18.1.0\AndroidManifest.xml:36:13-38:85
+428                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+428-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\b32c7e275ba571344c4bc142d1720abc\jetified-firebase-auth-18.1.0\AndroidManifest.xml:37:17-109
+429                android:value="com.google.firebase.components.ComponentRegistrar" />
+429-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\b32c7e275ba571344c4bc142d1720abc\jetified-firebase-auth-18.1.0\AndroidManifest.xml:38:17-82
+430            <meta-data
+430-->[com.google.firebase:firebase-database:19.2.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\3c24b1753aae4bc801a764eab0d14792\jetified-firebase-database-19.2.0\AndroidManifest.xml:32:13-34:85
+431                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+431-->[com.google.firebase:firebase-database:19.2.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\3c24b1753aae4bc801a764eab0d14792\jetified-firebase-database-19.2.0\AndroidManifest.xml:33:17-109
+432                android:value="com.google.firebase.components.ComponentRegistrar" />
+432-->[com.google.firebase:firebase-database:19.2.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\3c24b1753aae4bc801a764eab0d14792\jetified-firebase-database-19.2.0\AndroidManifest.xml:34:17-82
+433            <meta-data
+433-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\37e6eba9751895b3863ed587060780a9\jetified-play-services-measurement-api-17.0.0\AndroidManifest.xml:30:13-32:85
+434                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+434-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\37e6eba9751895b3863ed587060780a9\jetified-play-services-measurement-api-17.0.0\AndroidManifest.xml:31:17-139
+435                android:value="com.google.firebase.components.ComponentRegistrar" />
+435-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\37e6eba9751895b3863ed587060780a9\jetified-play-services-measurement-api-17.0.0\AndroidManifest.xml:32:17-82
+436            <meta-data
+436-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\ba075b0564256e3b416c5d49340dfa52\jetified-firebase-iid-19.0.1\AndroidManifest.xml:32:13-34:85
+437                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+437-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\ba075b0564256e3b416c5d49340dfa52\jetified-firebase-iid-19.0.1\AndroidManifest.xml:33:17-96
+438                android:value="com.google.firebase.components.ComponentRegistrar" />
+438-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\ba075b0564256e3b416c5d49340dfa52\jetified-firebase-iid-19.0.1\AndroidManifest.xml:34:17-82
+439        </service>
+440        <!--
+441             FirebaseMessagingService performs security checks at runtime,
+442             but set to not exported to explicitly avoid allowing another app to call it.
+443        -->
+444        <service
+444-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\a85661b06e5479effcd64ff306ea8a4d\jetified-firebase-messaging-19.0.1\AndroidManifest.xml:28:9-34:19
+445            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+445-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\a85661b06e5479effcd64ff306ea8a4d\jetified-firebase-messaging-19.0.1\AndroidManifest.xml:29:13-82
+446            android:exported="false" >
+446-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\a85661b06e5479effcd64ff306ea8a4d\jetified-firebase-messaging-19.0.1\AndroidManifest.xml:30:13-37
+447            <intent-filter android:priority="-500" >
+447-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\a85661b06e5479effcd64ff306ea8a4d\jetified-firebase-messaging-19.0.1\AndroidManifest.xml:31:13-33:29
+447-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\a85661b06e5479effcd64ff306ea8a4d\jetified-firebase-messaging-19.0.1\AndroidManifest.xml:31:28-51
+448                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+448-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\a85661b06e5479effcd64ff306ea8a4d\jetified-firebase-messaging-19.0.1\AndroidManifest.xml:32:17-78
+448-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\a85661b06e5479effcd64ff306ea8a4d\jetified-firebase-messaging-19.0.1\AndroidManifest.xml:32:25-75
+449            </intent-filter>
+450        </service>
+451
+452        <activity
+452-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\e96e3ef2dadccd6f89a29ebab19e362b\jetified-play-services-auth-17.0.0\AndroidManifest.xml:23:9-27:75
+453            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+453-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\e96e3ef2dadccd6f89a29ebab19e362b\jetified-play-services-auth-17.0.0\AndroidManifest.xml:24:13-93
+454            android:excludeFromRecents="true"
+454-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\e96e3ef2dadccd6f89a29ebab19e362b\jetified-play-services-auth-17.0.0\AndroidManifest.xml:25:13-46
+455            android:exported="false"
+455-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\e96e3ef2dadccd6f89a29ebab19e362b\jetified-play-services-auth-17.0.0\AndroidManifest.xml:26:13-37
+456            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+456-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\e96e3ef2dadccd6f89a29ebab19e362b\jetified-play-services-auth-17.0.0\AndroidManifest.xml:27:13-72
+457        <!--
+458            Service handling Google Sign-In user revocation. For apps that do not integrate with
+459            Google Sign-In, this service will never be started.
+460        -->
+461        <service
+461-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\e96e3ef2dadccd6f89a29ebab19e362b\jetified-play-services-auth-17.0.0\AndroidManifest.xml:33:9-36:110
+462            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+462-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\e96e3ef2dadccd6f89a29ebab19e362b\jetified-play-services-auth-17.0.0\AndroidManifest.xml:34:13-89
+463            android:exported="true"
+463-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\e96e3ef2dadccd6f89a29ebab19e362b\jetified-play-services-auth-17.0.0\AndroidManifest.xml:35:13-36
+464            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" /> <!-- Needs to be explicitly declared on P+ -->
+464-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\e96e3ef2dadccd6f89a29ebab19e362b\jetified-play-services-auth-17.0.0\AndroidManifest.xml:36:13-107
+465        <uses-library
+465-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\c74868d04d8837497165ac9a6c43c9f9\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+466            android:name="org.apache.http.legacy"
+466-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\c74868d04d8837497165ac9a6c43c9f9\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+467            android:required="false" />
+467-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\c74868d04d8837497165ac9a6c43c9f9\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+468
+469        <receiver android:name="com.razorpay.RzpTokenReceiver" >
+469-->[com.razorpay:checkout:1.5.5] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\0c7b83bab00fb9dc05a2b3c8355b47ac\jetified-checkout-1.5.5\AndroidManifest.xml:12:9-16:20
+469-->[com.razorpay:checkout:1.5.5] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\0c7b83bab00fb9dc05a2b3c8355b47ac\jetified-checkout-1.5.5\AndroidManifest.xml:12:19-63
+470            <intent-filter>
+470-->[com.razorpay:checkout:1.5.5] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\0c7b83bab00fb9dc05a2b3c8355b47ac\jetified-checkout-1.5.5\AndroidManifest.xml:13:13-15:29
+471                <action android:name="rzp.device_token.share" />
+471-->[com.razorpay:checkout:1.5.5] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\0c7b83bab00fb9dc05a2b3c8355b47ac\jetified-checkout-1.5.5\AndroidManifest.xml:14:17-65
+471-->[com.razorpay:checkout:1.5.5] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\0c7b83bab00fb9dc05a2b3c8355b47ac\jetified-checkout-1.5.5\AndroidManifest.xml:14:25-62
+472            </intent-filter>
+473        </receiver>
+474
+475        <activity
+475-->[com.razorpay:checkout:1.5.5] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\0c7b83bab00fb9dc05a2b3c8355b47ac\jetified-checkout-1.5.5\AndroidManifest.xml:18:9-29:20
+476            android:name="com.razorpay.CheckoutActivity"
+476-->[com.razorpay:checkout:1.5.5] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\0c7b83bab00fb9dc05a2b3c8355b47ac\jetified-checkout-1.5.5\AndroidManifest.xml:19:13-57
+477            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+477-->[com.razorpay:checkout:1.5.5] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\0c7b83bab00fb9dc05a2b3c8355b47ac\jetified-checkout-1.5.5\AndroidManifest.xml:20:13-83
+478            android:theme="@style/CheckoutTheme" >
+478-->[com.razorpay:checkout:1.5.5] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\0c7b83bab00fb9dc05a2b3c8355b47ac\jetified-checkout-1.5.5\AndroidManifest.xml:21:13-49
+479            <intent-filter>
+479-->[com.razorpay:checkout:1.5.5] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\0c7b83bab00fb9dc05a2b3c8355b47ac\jetified-checkout-1.5.5\AndroidManifest.xml:22:13-28:29
+480                <action android:name="android.intent.action.MAIN" />
+480-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:91:17-69
+480-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:91:25-66
+481
+482                <data
+483                    android:host="rzp.io"
+484                    android:scheme="io.rzp" />
+484-->C:\Users\lenovo\Documents\Project\android-grocery-customer code\app\src\main\AndroidManifest.xml:147:23-66
+485            </intent-filter>
+486        </activity>
+487
+488        <receiver
+488-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\ba075b0564256e3b416c5d49340dfa52\jetified-firebase-iid-19.0.1\AndroidManifest.xml:37:9-44:20
+489            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+489-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\ba075b0564256e3b416c5d49340dfa52\jetified-firebase-iid-19.0.1\AndroidManifest.xml:38:13-78
+490            android:exported="true"
+490-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\ba075b0564256e3b416c5d49340dfa52\jetified-firebase-iid-19.0.1\AndroidManifest.xml:39:13-36
+491            android:permission="com.google.android.c2dm.permission.SEND" >
+491-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\ba075b0564256e3b416c5d49340dfa52\jetified-firebase-iid-19.0.1\AndroidManifest.xml:40:13-73
+492            <intent-filter>
+492-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\ba075b0564256e3b416c5d49340dfa52\jetified-firebase-iid-19.0.1\AndroidManifest.xml:41:13-43:29
+493                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+493-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:64:17-81
+493-->[com.onesignal:OneSignal:3.9.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\5074cfb4331a318ad72226da6845e403\jetified-OneSignal-3.9.1\AndroidManifest.xml:64:25-78
+494            </intent-filter>
+495        </receiver>
+496
+497        <activity
+497-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\4f938692db7be5d5a2a317d95cdc83d0\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+498            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+498-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\4f938692db7be5d5a2a317d95cdc83d0\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+499            android:exported="false"
+499-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\4f938692db7be5d5a2a317d95cdc83d0\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+500            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+500-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\4f938692db7be5d5a2a317d95cdc83d0\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+501
+502        <provider
+502-->[com.google.firebase:firebase-common:19.2.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\bbd7bc8fe4178b0b3e76fd0b33ccefdd\jetified-firebase-common-19.2.0\AndroidManifest.xml:19:9-23:39
+503            android:name="com.google.firebase.provider.FirebaseInitProvider"
+503-->[com.google.firebase:firebase-common:19.2.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\bbd7bc8fe4178b0b3e76fd0b33ccefdd\jetified-firebase-common-19.2.0\AndroidManifest.xml:20:13-77
+504            android:authorities="com.themescoder.androidstore.firebaseinitprovider"
+504-->[com.google.firebase:firebase-common:19.2.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\bbd7bc8fe4178b0b3e76fd0b33ccefdd\jetified-firebase-common-19.2.0\AndroidManifest.xml:21:13-72
+505            android:exported="false"
+505-->[com.google.firebase:firebase-common:19.2.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\bbd7bc8fe4178b0b3e76fd0b33ccefdd\jetified-firebase-common-19.2.0\AndroidManifest.xml:22:13-37
+506            android:initOrder="100" />
+506-->[com.google.firebase:firebase-common:19.2.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\bbd7bc8fe4178b0b3e76fd0b33ccefdd\jetified-firebase-common-19.2.0\AndroidManifest.xml:23:13-36
+507
+508        <receiver
+508-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\413c876f95815fb743b09b464426874d\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:29:9-33:20
+509            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+509-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\413c876f95815fb743b09b464426874d\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:30:13-85
+510            android:enabled="true"
+510-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\413c876f95815fb743b09b464426874d\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:31:13-35
+511            android:exported="false" >
+511-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\413c876f95815fb743b09b464426874d\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:32:13-37
+512        </receiver>
+513        <receiver
+513-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\413c876f95815fb743b09b464426874d\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:34:9-42:20
+514            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+514-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\413c876f95815fb743b09b464426874d\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:35:13-100
+515            android:enabled="true"
+515-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\413c876f95815fb743b09b464426874d\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:36:13-35
+516            android:exported="true"
+516-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\413c876f95815fb743b09b464426874d\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:37:13-36
+517            android:permission="android.permission.INSTALL_PACKAGES" >
+517-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\413c876f95815fb743b09b464426874d\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:38:13-69
+518            <intent-filter>
+518-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\413c876f95815fb743b09b464426874d\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:39:13-41:29
+519                <action android:name="com.android.vending.INSTALL_REFERRER" />
+519-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\413c876f95815fb743b09b464426874d\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:40:17-79
+519-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\413c876f95815fb743b09b464426874d\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:40:25-76
+520            </intent-filter>
+521        </receiver>
+522
+523        <service
+523-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\413c876f95815fb743b09b464426874d\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:44:9-47:40
+524            android:name="com.google.android.gms.measurement.AppMeasurementService"
+524-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\413c876f95815fb743b09b464426874d\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:45:13-84
+525            android:enabled="true"
+525-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\413c876f95815fb743b09b464426874d\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:46:13-35
+526            android:exported="false" />
+526-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\413c876f95815fb743b09b464426874d\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:47:13-37
+527        <service
+527-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\413c876f95815fb743b09b464426874d\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:48:9-52:72
+528            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+528-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\413c876f95815fb743b09b464426874d\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:49:13-87
+529            android:enabled="true"
+529-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\413c876f95815fb743b09b464426874d\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:50:13-35
+530            android:exported="false"
+530-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\413c876f95815fb743b09b464426874d\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:51:13-37
+531            android:permission="android.permission.BIND_JOB_SERVICE" />
+531-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\413c876f95815fb743b09b464426874d\jetified-play-services-measurement-17.0.0\AndroidManifest.xml:52:13-69
+532
+533        <meta-data
+533-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\a86c1114a6621d178cb299140ae6ff43\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+534            android:name="com.google.android.gms.version"
+534-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\a86c1114a6621d178cb299140ae6ff43\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+535            android:value="@integer/google_play_services_version" />
+535-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\a86c1114a6621d178cb299140ae6ff43\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+536        <!--
+537         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+538         with the application context. This config is merged in with the host app's manifest,
+539         but there can only be one provider with the same authority activated at any given
+540         point; so if the end user has two or more different apps that use Facebook SDK, only the
+541         first one will be able to use the provider. To work around this problem, we use the
+542         following placeholder in the authority to identify each host application as if it was
+543         a completely different provider.
+544        -->
+545        <provider
+545-->[com.facebook.android:facebook-core:4.42.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\0c3f55fd4812d02d37aa83f5838c886a\jetified-facebook-core-4.42.0\AndroidManifest.xml:39:9-42:40
+546            android:name="com.facebook.internal.FacebookInitProvider"
+546-->[com.facebook.android:facebook-core:4.42.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\0c3f55fd4812d02d37aa83f5838c886a\jetified-facebook-core-4.42.0\AndroidManifest.xml:40:13-70
+547            android:authorities="com.themescoder.androidstore.FacebookInitProvider"
+547-->[com.facebook.android:facebook-core:4.42.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\0c3f55fd4812d02d37aa83f5838c886a\jetified-facebook-core-4.42.0\AndroidManifest.xml:41:13-72
+548            android:exported="false" />
+548-->[com.facebook.android:facebook-core:4.42.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\0c3f55fd4812d02d37aa83f5838c886a\jetified-facebook-core-4.42.0\AndroidManifest.xml:42:13-37
+549
+550        <receiver
+550-->[com.facebook.android:facebook-core:4.42.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\0c3f55fd4812d02d37aa83f5838c886a\jetified-facebook-core-4.42.0\AndroidManifest.xml:44:9-50:20
+551            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+551-->[com.facebook.android:facebook-core:4.42.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\0c3f55fd4812d02d37aa83f5838c886a\jetified-facebook-core-4.42.0\AndroidManifest.xml:45:13-86
+552            android:exported="false" >
+552-->[com.facebook.android:facebook-core:4.42.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\0c3f55fd4812d02d37aa83f5838c886a\jetified-facebook-core-4.42.0\AndroidManifest.xml:46:13-37
+553            <intent-filter>
+553-->[com.facebook.android:facebook-core:4.42.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\0c3f55fd4812d02d37aa83f5838c886a\jetified-facebook-core-4.42.0\AndroidManifest.xml:47:13-49:29
+554                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+554-->[com.facebook.android:facebook-core:4.42.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\0c3f55fd4812d02d37aa83f5838c886a\jetified-facebook-core-4.42.0\AndroidManifest.xml:48:17-95
+554-->[com.facebook.android:facebook-core:4.42.0] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\0c3f55fd4812d02d37aa83f5838c886a\jetified-facebook-core-4.42.0\AndroidManifest.xml:48:25-92
+555            </intent-filter>
+556        </receiver>
+557
+558        <activity
+558-->[io.card:android-sdk:5.5.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\66b8b936ac38ad926ef5321189945f0c\jetified-android-sdk-5.5.1\AndroidManifest.xml:20:9-22:66
+559            android:name="io.card.payment.CardIOActivity"
+559-->[io.card:android-sdk:5.5.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\66b8b936ac38ad926ef5321189945f0c\jetified-android-sdk-5.5.1\AndroidManifest.xml:21:13-58
+560            android:configChanges="keyboardHidden|orientation" />
+560-->[io.card:android-sdk:5.5.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\66b8b936ac38ad926ef5321189945f0c\jetified-android-sdk-5.5.1\AndroidManifest.xml:22:13-63
+561        <activity android:name="io.card.payment.DataEntryActivity" />
+561-->[io.card:android-sdk:5.5.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\66b8b936ac38ad926ef5321189945f0c\jetified-android-sdk-5.5.1\AndroidManifest.xml:23:9-70
+561-->[io.card:android-sdk:5.5.1] C:\Users\lenovo\.gradle\caches\transforms-2\files-2.1\66b8b936ac38ad926ef5321189945f0c\jetified-android-sdk-5.5.1\AndroidManifest.xml:23:19-67
+562    </application>
+563
+564</manifest>
